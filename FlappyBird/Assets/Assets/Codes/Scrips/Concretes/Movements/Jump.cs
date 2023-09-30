@@ -16,7 +16,7 @@ public class Jump : IJump
         if (JumpKeyDown)
         {
             _rigidbody2D.velocity = Vector2.zero;
-            _rigidbody2D.AddForce(Vector2.up * jumpForce, ForceMode2D.Force);
+            _rigidbody2D.AddForce(Vector2.up * Time.deltaTime * jumpForce, ForceMode2D.Force);
         }
 
     }

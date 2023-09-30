@@ -27,7 +27,7 @@ public class SpawnerController : MonoBehaviour
     public void SpawnAction()
     {
         WallController newWallController = Instantiate(_wallController, _spawnerTransform[Random.Range(0, _spawnerTransform.Length)].position, Quaternion.identity);
-
+        
 
 
     }

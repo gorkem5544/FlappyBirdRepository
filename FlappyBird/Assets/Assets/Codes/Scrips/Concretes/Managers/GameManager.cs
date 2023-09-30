@@ -11,13 +11,14 @@ public class GameManager : SingletonDontDestroyMono<GameManager>
     public event System.Action<int> OnScoreChanged;
     public event System.Action OnDead;
 
-
+  
     public void IncreaseScore(int scoreAmount)
     {
         _score += scoreAmount;
         OnScoreChanged?.Invoke(_score);
     }
 
+   
     public void Dead()
     {
         Time.timeScale = 0;
