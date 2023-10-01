@@ -2,8 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface IJump
+public interface IPlayerSO 
 {
-    void FixedJumpTick();
-    void UpdateJumpTick();
+    float JumpForce { get; }
 }

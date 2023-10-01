@@ -9,21 +9,18 @@ public class GameManager : SingletonDontDestroyMono<GameManager>
 
     [SerializeField] int _score;
     public event System.Action<int> OnScoreChanged;
-    public event System.Action OnDead;
+    public event System.Action OnSceneChanged;
 
-  
+
+
     public void IncreaseScore(int scoreAmount)
     {
         _score += scoreAmount;
         OnScoreChanged?.Invoke(_score);
     }
 
-   
-    public void Dead()
-    {
-        Time.timeScale = 0;
-        OnDead?.Invoke();
-    }
+
+
     public void LoadGame(string sceneName)
     {
         StartCoroutine(LoadSceneAsync(sceneName));
@@ -32,6 +29,7 @@ public class GameManager : SingletonDontDestroyMono<GameManager>
     }
     IEnumerator LoadSceneAsync(string sceneName)
     {
+        OnSceneChanged?.Invoke();
         yield return SceneManager.LoadSceneAsync(sceneName);
     }
 

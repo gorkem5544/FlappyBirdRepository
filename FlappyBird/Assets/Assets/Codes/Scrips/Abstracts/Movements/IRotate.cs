@@ -2,8 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface IJump
+public interface IRotate
 {
-    void FixedJumpTick();
-    void UpdateJumpTick();
+    void RotateAction();
 }

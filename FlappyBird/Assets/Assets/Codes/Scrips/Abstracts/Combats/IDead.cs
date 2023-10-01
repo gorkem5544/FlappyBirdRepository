@@ -2,8 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface IJump
+public interface IDead
 {
-    void FixedJumpTick();
-    void UpdateJumpTick();
+    bool IsDead { get; }
 }

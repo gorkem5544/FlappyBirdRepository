@@ -18,15 +18,10 @@ public class GameOverObj : MonoBehaviour
     }
     private void Start()
     {
-        GameManager.Instance.OnDead += HandleOnDead;
+        Dead dead = FindObjectOfType<Dead>();
+        dead.OnDead += HandleOnDead;
     }
 
-
-
-    private void OnDisable()
-    {
-        GameManager.Instance.OnDead -= HandleOnDead;
-    }
 
     private void HandleOnDead()
     {

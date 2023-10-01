@@ -11,7 +11,9 @@ public abstract class LifeCycleController : MonoBehaviour
         _currentTime += Time.deltaTime;
         if (_currentTime > _maxLifeTime)
         {
-            Destroy(this.gameObject);
+            KillGameObject();
         }
     }
+
+    public abstract void KillGameObject();
 }

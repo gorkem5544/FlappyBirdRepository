@@ -4,6 +4,7 @@ using UnityEngine;
 
 public interface IPlayerController : IEntityController
 {
-
+    IPlayerInput PlayerInput { get; }
+    IPlayerSO PlayerSO { get; }
 
 }

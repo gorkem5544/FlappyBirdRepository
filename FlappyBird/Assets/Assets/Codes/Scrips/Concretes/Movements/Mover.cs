@@ -11,6 +11,6 @@ public class Mover : IMover
     }
     public void MoveAction(float moveSpeed)
     {
-        _rigidbody2D.velocity = Vector2.left * Time.deltaTime * moveSpeed;
+        _rigidbody2D.velocity = Vector2.left * Time.fixedDeltaTime * moveSpeed;
     }
 }
