@@ -1,19 +1,24 @@
+using Abstracts.Controllers;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class EnemyController : LifeCycleController
+namespace Concretes.Controllers
 {
-    public override void KillGameObject()
+    public abstract class EnemyController : LifeCycleController
     {
+        public override void KillGameObject()
+        {
 
-        _currentTime = 0;
-        //WallPool.Instance.Set(this);
+            _currentTime = 0;
+            //WallPool.Instance.Set(this);
 
-        SetEnemyPool();
+            SetEnemyPool();
+        }
+
+        public abstract void SetEnemyPool();
+
     }
-
-    public abstract void SetEnemyPool();
 
 }

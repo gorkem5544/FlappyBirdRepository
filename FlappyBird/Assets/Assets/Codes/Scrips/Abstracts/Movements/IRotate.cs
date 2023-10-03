@@ -2,7 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface IRotate
+namespace Abstracts.Movements
 {
-    void RotateAction();
+    public interface IRotate
+    {
+        void RotateAction();
+    }
+
 }

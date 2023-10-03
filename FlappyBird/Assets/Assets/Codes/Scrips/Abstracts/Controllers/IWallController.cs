@@ -2,7 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface IWallController : IEntityController
+namespace Abstracts.Controllers
 {
-   
+    public interface IWallController : IEntityController
+    {
+
+    }
+
 }

@@ -2,8 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface IJump
+namespace Abstracts.Movements
 {
-    void FixedJumpTick();
-    void UpdateJumpTick();
+    public interface IJump
+    {
+        void FixedJumpTick();
+        void UpdateJumpTick();
+    }
+
 }

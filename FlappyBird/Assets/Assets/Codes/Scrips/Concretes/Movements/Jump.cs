@@ -1,35 +1,42 @@
+using Abstracts.Controllers;
+using Abstracts.Movements;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Jump : IJump
+namespace Concretes.Movements
 {
-    Rigidbody2D _rigidbody2D;
-    IPlayerController _playerController;
-
-    private bool _isJumping;
-    public Jump(IPlayerController playerController)
+    public class Jump : IJump
     {
-        _playerController = playerController;
-        _rigidbody2D = playerController.transform.GetComponent<Rigidbody2D>();
+        Rigidbody2D _rigidbody2D;
+        IPlayerController _playerController;
 
-    }
-    public void UpdateJumpTick()
-    {
-        if (_playerController.PlayerInput.JumpKeyDown)
+        private bool _isJumping;
+        public Jump(IPlayerController playerController)
         {
-            _isJumping = true;
+            _playerController = playerController;
+            _rigidbody2D = playerController.transform.GetComponent<Rigidbody2D>();
+
         }
 
-    }
-    public void FixedJumpTick()
-    {
-        if (_isJumping)
+        public void UpdateJumpTick()
         {
-            _rigidbody2D.velocity = Vector2.zero;
-            _rigidbody2D.AddForce(Vector2.up * _playerController.PlayerSO.JumpForce, ForceMode2D.Force);
-            _isJumping = false;
+            if (_playerController.PlayerInput.JumpKeyDown)
+            {
+                _isJumping = true;
+            }
 
         }
+        public void FixedJumpTick()
+        {
+            if (_isJumping)
+            {
+                _rigidbody2D.velocity = Vector2.zero;
+                _rigidbody2D.AddForce(Vector2.up * _playerController.PlayerSO.JumpForce, ForceMode2D.Force);
+                _isJumping = false;
+
+            }
+        }
     }
+
 }

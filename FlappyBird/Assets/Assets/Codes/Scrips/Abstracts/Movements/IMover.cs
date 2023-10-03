@@ -2,7 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface IMover
+namespace Abstracts.Movements
 {
-    void MoveAction(float moveSpeed);
+    public interface IMover
+    {
+        void MoveAction(float moveSpeed);
+    }
+
 }

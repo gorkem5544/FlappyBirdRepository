@@ -1,8 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public interface IEntityController
+namespace Abstracts.Controllers
 {
-    Transform transform { get; }
+    public interface IEntityController
+    {
+        Transform transform { get; }
+    }
+
 }

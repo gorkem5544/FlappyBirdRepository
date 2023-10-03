@@ -2,10 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class IncreaseScore : MonoBehaviour
+namespace Concretes.Combats
 {
-    private void OnTriggerEnter2D(Collider2D other)
+    public class IncreaseScore : MonoBehaviour
     {
-        GameManager.Instance.IncreaseScore(1);
+        private void OnTriggerEnter2D(Collider2D other)
+        {
+            GameManager.Instance.IncreaseScore(1);
+        }
     }
+
 }

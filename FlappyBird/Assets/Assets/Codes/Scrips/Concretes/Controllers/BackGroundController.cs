@@ -2,21 +2,25 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BackGroundController : MonoBehaviour
+namespace Concretes.Controllers
 {
-
-    [SerializeField] SpriteRenderer _backGroundRenderer, _groundRenderer;
-
-    private void Update()
+    public class BackGroundController : MonoBehaviour
     {
-        MoveSpriteRenderer(_backGroundRenderer, _groundRenderer);
-    }
 
-    public void MoveSpriteRenderer(params SpriteRenderer[] sprites)
-    {
-        foreach (SpriteRenderer spriteRenderer in sprites)
+        [SerializeField] SpriteRenderer _backGroundRenderer, _groundRenderer;
+
+        private void Update()
         {
-            spriteRenderer.size += Vector2.right * Time.deltaTime * 10f;
+            MoveSpriteRenderer(_backGroundRenderer, _groundRenderer);
+        }
+
+        public void MoveSpriteRenderer(params SpriteRenderer[] sprites)
+        {
+            foreach (SpriteRenderer spriteRenderer in sprites)
+            {
+                spriteRenderer.size += Vector2.right * Time.deltaTime * 10f;
+            }
         }
     }
+
 }

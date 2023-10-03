@@ -2,7 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface IDead
+namespace Abstracts.Combats
 {
-    bool IsDead { get; }
+    public interface IDead
+    {
+        bool IsDead { get; }
+    }
+
 }

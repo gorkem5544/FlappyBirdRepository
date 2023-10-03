@@ -2,18 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class LifeCycleController : MonoBehaviour
+namespace Abstracts.Controllers
 {
-    [SerializeField] protected float _maxLifeTime;
-    protected float _currentTime;
-    private void Update()
+    public abstract class LifeCycleController : MonoBehaviour
     {
-        _currentTime += Time.deltaTime;
-        if (_currentTime > _maxLifeTime)
+        [SerializeField] protected float _maxLifeTime;
+        protected float _currentTime;
+        private void Update()
         {
-            KillGameObject();
+            _currentTime += Time.deltaTime;
+            if (_currentTime > _maxLifeTime)
+            {
+                KillGameObject();
+            }
         }
+
+        public abstract void KillGameObject();
     }
 
-    public abstract void KillGameObject();
 }

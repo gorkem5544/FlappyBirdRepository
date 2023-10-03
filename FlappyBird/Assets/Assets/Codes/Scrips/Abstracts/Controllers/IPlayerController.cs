@@ -1,10 +1,15 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+using Abstracts.Controllers;
+using Abstracts.Inputs;
+using Abstracts.SO;
 
-public interface IPlayerController : IEntityController
+namespace Abstracts.Controllers
 {
-    IPlayerInput PlayerInput { get; }
-    IPlayerSO PlayerSO { get; }
+
+    public interface IPlayerController : IEntityController
+    {
+        IPlayerInput PlayerInput { get; }
+        IPlayerSO PlayerSO { get; }
+
+    }
 
 }

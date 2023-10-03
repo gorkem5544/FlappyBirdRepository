@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Abstracts.Inputs
+namespace Abstracts.SO
 {
-    public interface IPlayerInput
+    public interface IPlayerSO
     {
-        bool JumpKeyDown { get; }
+        float JumpForce { get; }
     }
 
 }

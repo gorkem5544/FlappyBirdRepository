@@ -241,10 +241,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: DeadZone
       objectReference: {fileID: 0}
-    - target: {fileID: 1279748557974417496, guid: 1c5fdbe1a8f59994f8f936816ea6e31f, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1279748557974417498, guid: 1c5fdbe1a8f59994f8f936816ea6e31f, type: 3}
       propertyPath: m_RootOrder
       value: 6
