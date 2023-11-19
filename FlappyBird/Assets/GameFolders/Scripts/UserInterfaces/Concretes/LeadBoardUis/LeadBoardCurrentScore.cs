@@ -41,7 +41,7 @@ namespace Assembly_CSharp.Assets.GameFolders.Scripts.UserInterfaces.Concretes.Le
             {
                 SetNumberImage(_rightScoreImg, _scoreChar[0]);
             }
-            Debug.Log(ScoreManager.Instance.HighScore);
+         
         }
 
 

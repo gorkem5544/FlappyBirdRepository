@@ -3,6 +3,7 @@ using Assembly_CSharp.Assets.GameFolders.Scripts.Combats.Abstracts.PlayerCombats
 using Assembly_CSharp.Assets.GameFolders.Scripts.Combats.Concretes.PlayerCombats;
 using Assembly_CSharp.Assets.GameFolders.Scripts.Controllers.Abstracts;
 using Assembly_CSharp.Assets.GameFolders.Scripts.Controllers.Abstracts.EnemyControllers;
+using Assembly_CSharp.Assets.GameFolders.Scripts.Controllers.Abstracts.OtherControllers;
 using Assembly_CSharp.Assets.GameFolders.Scripts.Controllers.Abstracts.PlayerControllers;
 using Assembly_CSharp.Assets.GameFolders.Scripts.Controllers.Concretes.OtherControllers;
 using Assembly_CSharp.Assets.GameFolders.Scripts.Inputs.Abstracts;

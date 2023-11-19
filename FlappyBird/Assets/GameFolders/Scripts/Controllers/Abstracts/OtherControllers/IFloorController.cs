@@ -1,15 +1,13 @@
-using Assembly_CSharp.Assets.GameFolders.Scripts.ScriptableObjects.Abstracts.OtherScriptableObjects;
+using Assembly_CSharp.Assets.GameFolders.Scripts.Controllers.Abstracts;
 using Assembly_CSharp.Assets.GameFolders.Scripts.ScriptableObjects.Concretes.OtherScriptableObjects;
 using UnityEngine;
 
 namespace Assembly_CSharp.Assets.GameFolders.Scripts.Controllers.Abstracts.OtherControllers
 {
-    public interface ISpriteRendererController : IEntityController
+    public interface IFloorController : IEntityController
     {
+        FloorSO FloorData { get; }
         SpriteRenderer SpriteRenderer { get; }
-        SpriteRendererSO SpriteRendererData { get; }
-        float MoveSpeed { get; }
-
     }
 
 }

@@ -6,16 +6,17 @@ using UnityEngine;
 
 namespace Assembly_CSharp.Assets.GameFolders.Scripts.Movements.Concretes.OtherMovements
 {
-    public class SpriteRendererMover : ISpriteRendererMover
+    public class BackGroundMover : ISpriteRendererMover
     {
-        ISpriteRendererController _spriteRendererController;
-        public SpriteRendererMover(ISpriteRendererController spriteRendererController)
+        IBackGroundController _backGroundController;
+        public BackGroundMover(IBackGroundController backGroundController)
         {
-            _spriteRendererController = spriteRendererController;
+
+            _backGroundController = backGroundController;
         }
         public void SpriteRendererMove()
         {
-            _spriteRendererController.SpriteRenderer.size += Vector2.right * Time.deltaTime * _spriteRendererController.SpriteRendererData.SizeSpeed;
+            _backGroundController.SpriteRenderer.size += Vector2.right * Time.deltaTime * _backGroundController.BackGroundData.SizeSpeed;
         }
     }
 

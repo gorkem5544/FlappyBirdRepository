@@ -1018,6 +1018,7 @@ GameObject:
   - component: {fileID: 2699521426141289988}
   - component: {fileID: 2699521426141289986}
   - component: {fileID: 2699521426141289989}
+  - component: {fileID: 189286374}
   m_Layer: 5
   m_Name: MedallionImage
   m_TagString: Untagged
@@ -1073,7 +1074,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -4593708515051396011, guid: e898f795a6831cf41a2a7fe2a000ccb3, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1083,6 +1084,23 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &189286374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2699521426141289991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abd5fc8d0dbaf3048871a16bf44128aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _medallions:
+  - {fileID: 2393472659017795687, guid: e898f795a6831cf41a2a7fe2a000ccb3, type: 3}
+  - {fileID: -4593708515051396011, guid: e898f795a6831cf41a2a7fe2a000ccb3, type: 3}
+  - {fileID: 4832545000321325629, guid: e898f795a6831cf41a2a7fe2a000ccb3, type: 3}
+  - {fileID: -3777503300874056156, guid: e898f795a6831cf41a2a7fe2a000ccb3, type: 3}
 --- !u!1 &2699521426242131842
 GameObject:
   m_ObjectHideFlags: 0

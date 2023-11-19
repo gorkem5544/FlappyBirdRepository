@@ -9,7 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd17c7065a9740d43904d33859a3ad09, type: 3}
+  m_Script: {fileID: 11500000, guid: ca9a8b4e84325e04cacd0ede5284ba12, type: 3}
   m_Name: BackGroundSO
   m_EditorClassIdentifier: 
-  _sizeSpeed: 2
+  _sizeSpeed: 1
+  _daySprite: {fileID: 21300000, guid: 5011b57f93736e447be14ae7bd792e24, type: 3}
+  _nightSprite: {fileID: 21300000, guid: 7acd3b87b2aa1f64087b2ff31335424d, type: 3}
