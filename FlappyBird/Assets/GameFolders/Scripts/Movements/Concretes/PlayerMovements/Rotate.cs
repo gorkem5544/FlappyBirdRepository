@@ -16,8 +16,8 @@ namespace Assembly_CSharp.Assets.GameFolders.Scripts.Movements.Concretes.PlayerM
 
         public void Update()
         {
-            angle = Vector3.Angle(Vector3.right, _playerController.Rigidbody2D.velocity);
-            if (_playerController.Rigidbody2D.velocity.y < 0)
+            angle = Vector3.Angle(Vector3.right, _playerController.Rigidbody2D.linearVelocity);
+            if (_playerController.Rigidbody2D.linearVelocity.y < 0)
             {
                 angle = -angle;
             }

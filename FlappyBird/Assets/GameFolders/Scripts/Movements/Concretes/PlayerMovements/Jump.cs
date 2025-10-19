@@ -26,7 +26,7 @@ namespace Assembly_CSharp.Assets.GameFolders.Scripts.Movements.Concretes.PlayerM
         {
             if (_isJumping)
             {
-                _playerController.Rigidbody2D.velocity = Vector2.zero;
+                _playerController.Rigidbody2D.linearVelocity = Vector2.zero;
                 _playerController.Rigidbody2D.AddForce(Vector2.up * _playerController.PlayerSO.JumpForce, ForceMode2D.Force);
                 _isJumping = false;
             }

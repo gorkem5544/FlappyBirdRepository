@@ -15,7 +15,7 @@ namespace Assembly_CSharp.Assets.GameFolders.Scripts.Movements.Concretes.EnemyMo
         }
         public void OnEnable()
         {
-            _wallController.WallControllerRigidBody2D.velocity = Vector2.left * Time.fixedDeltaTime * _wallController.WallControllerSettings.MoveSpeed;
+            _wallController.WallControllerRigidBody2D.linearVelocity = Vector2.left * Time.fixedDeltaTime * _wallController.WallControllerSettings.MoveSpeed;
         }
     }
 
